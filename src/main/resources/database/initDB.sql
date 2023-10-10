@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS reactClients
+(
+    id    SERIAL PRIMARY KEY,
+    first_name  VARCHAR(200) NOT NULL,
+    last_name  VARCHAR(200) NOT NULL,
+    email VARCHAR(256)  NOT NULL
+);
+CREATE SEQUENCE react_clients_id_seq START WITH 1 INCREMENT BY 1;
